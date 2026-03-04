@@ -24,7 +24,7 @@ export function Contact() {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
-
+                  <Mail className="w-5 h-5 text-primary mt-1" />
                   </div>
                   <div>
                     <CardTitle className="text-white">ติดต่อผ่าน LINE</CardTitle>
@@ -113,9 +113,6 @@ export function Contact() {
                       <img src={LineContact}
                       alt="Line Contact @408hermp"/>
                     </p>
-                      <p className="text-sm text-muted-foreground">
-                        วาง QR Code ของ LINE OA ที่นี่
-                      </p>
                     </div>
                   </div>
                 </div>
