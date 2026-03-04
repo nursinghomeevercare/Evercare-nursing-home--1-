@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MessageCircle, Phone, Mail, Clock, QrCode } from "lucide-react";
+import LineContact from "../../assets/Line.jpg" ;
 
 export function Contact() {
   return (
@@ -22,7 +23,9 @@ export function Contact() {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
-                    <MessageCircle className="w-6 h-6 text-white" />
+                    <img src={LineContact}
+                      alt="Line Contact @408hermp" 
+                      className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <CardTitle className="text-white">ติดต่อผ่าน LINE</CardTitle>

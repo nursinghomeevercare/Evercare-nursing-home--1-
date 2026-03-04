@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Card, CardContent } from "./ui/card";
 import { Users, Award, Clock, Heart } from "lucide-react";
+import heroImage from "../../assets/happy.jpg"; 
 
 export function About() {
   const stats = [
@@ -33,10 +34,9 @@ export function About() {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1612691997195-c11c53dc6aa0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGRlcmx5JTIwaGFwcHklMjBjYXJlZ2l2ZXJ8ZW58MXx8fHwxNzcyMzAwNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Caring for elderly"
-                className="w-full h-[500px] object-cover"
+              <img src={heroImage}
+              alt="Happy Thai elderly with caregiver at Evercare Nursing Home" 
+              className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
             </div>
