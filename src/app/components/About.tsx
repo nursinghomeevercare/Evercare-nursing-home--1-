@@ -2,6 +2,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Card, CardContent } from "./ui/card";
 import { Users, Award, Clock, Heart } from "lucide-react";
 import heroImage from "../assets/happy.jpg"; 
+import Hospital from "../assets/nurse-senior.jpg" ;
 
 export function About() {
   const stats = [
@@ -56,7 +57,7 @@ export function About() {
               <p>
                 <span className="font-semibold text-foreground">Evercare Nursing Home</span> 
                 {" "}เป็นบ้านพักผู้สูงอายุที่ให้บริการดูแลอย่างครบวงจร 
-                โดยทีมพยาบาลและผู้ดูแลมืออาชีพที่มีประสบการณ์ยาวนานในการดูแลผู้สูงอายุ
+                โดยทีมผู้ดูแลมืออาชีพมีประสบการณ์ยาวนานในการดูแลผู้สูงอายุ
               </p>
               
               <p>

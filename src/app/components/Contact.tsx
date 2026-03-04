@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MessageCircle, Phone, Mail, Clock, QrCode } from "lucide-react";
 import LineContact from "../assets/Line.jpg" ;
+import Hospital from "../assets/nurse-senior.jpg" ;
 
 export function Contact() {
   return (
@@ -29,8 +30,6 @@ export function Contact() {
                     <CardTitle className="text-white">ติดต่อผ่าน LINE</CardTitle>
                     <CardDescription className="text-white/80">
                       แนะนำ - ตอบเร็วที่สุด
-                      <img src={LineContact}
-                      alt="Line Contact @408hermp"/>
                     </CardDescription>
                   </div>
                 </div>
@@ -102,6 +101,7 @@ export function Contact() {
                 <CardTitle className="text-2xl">สแกน QR Code</CardTitle>
                 <CardDescription>
                   เพื่อติดต่อเราผ่าน LINE Official Account
+                  
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -109,7 +109,10 @@ export function Contact() {
                   <div className="w-64 h-64 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
                     {/* QR Code Placeholder */}
                     <div className="text-center p-6">
-                      <QrCode className="w-48 h-48 mx-auto text-gray-300 mb-4" />
+                    <p>                  
+                      <img src={LineContact}
+                      alt="Line Contact @408hermp"/>
+                    </p>
                       <p className="text-sm text-muted-foreground">
                         วาง QR Code ของ LINE OA ที่นี่
                       </p>
@@ -120,7 +123,7 @@ export function Contact() {
                 <div className="bg-secondary/10 rounded-lg p-4 text-center">
                   <p className="text-sm mb-2">หรือค้นหาเราด้วย LINE ID</p>
                   <p className="text-lg font-semibold text-secondary">
-                    @evercare-nursing
+                    @408hermp
                   </p>
                 </div>
               </CardContent>
