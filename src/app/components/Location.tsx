@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MapPin, Hospital, Navigation } from "lucide-react";
+import HospitalPic from "../assets/nurse-senior.jpg" ;
 
 export function Location() {
   const nearbyHospitals = [
@@ -88,8 +89,8 @@ export function Location() {
           <div className="lg:sticky lg:top-24">
             <Card className="overflow-hidden">
               <div className="relative h-[500px]">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1769147555720-71fc71bfc216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MjMwMDgwMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                <img
+                  src= {HospitalPic}
                   alt="Location"
                   className="w-full h-full object-cover"
                 />
