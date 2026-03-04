@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MessageCircle, Phone, Mail, Clock, QrCode } from "lucide-react";
 import LineContact from "../assets/Line.jpg" ;
-import Hospital from "../assets/nurse-senior.jpg" ;
 
 export function Contact() {
   return (
