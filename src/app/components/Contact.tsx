@@ -89,26 +89,25 @@ export function Contact() {
             </Card>
           </div>
 
+         
           {/* QR Code */}
-          
           <div className="flex flex-col justify-center">
-            <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
-            <QrCode className="w-8 h-8 text-secondary" />
-            </div>
             <Card className="border-2 border-secondary/20">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
-
+                  <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
+                    <QrCode className="w-8 h-8 text-secondary" />
+                  </div>
                 </div>
                 <CardTitle className="text-2xl">สแกน QR Code</CardTitle>
                 <CardDescription>
                   เพื่อติดต่อเราผ่าน LINE Official Account
-                  
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex justify-center mb-6">
                   <div className="w-64 h-64 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+
                     {/* QR Code Placeholder */}
                     <div className="text-center p-6">
                     <p>                  
