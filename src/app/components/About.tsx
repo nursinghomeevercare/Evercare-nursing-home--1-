@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Card, CardContent } from "./ui/card";
 import { Users, Award, Clock, Heart } from "lucide-react";
-import heroImage from "../../assets/happy.jpg"; 
+import heroImage from "../assets/happy.jpg"; 
 
 export function About() {
   const stats = [

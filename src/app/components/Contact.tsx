@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MessageCircle, Phone, Mail, Clock, QrCode } from "lucide-react";
-import LineContact from "../../assets/Line.jpg" ;
+import LineContact from "../assets/Line.jpg" ;
 
 export function Contact() {
   return (
