@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MapPin, Hospital, Navigation } from "lucide-react";
-import HospitalPic from "../assets/nurse-senior.jpg" ;
+import HospitalPic from "../assets/nurses-senior.jpg" ;
 
 export function Location() {
   const nearbyHospitals = [
