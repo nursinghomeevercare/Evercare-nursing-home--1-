@@ -23,14 +23,14 @@ export function Contact() {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
-                    <img src={LineContact}
-                      alt="Line Contact @408hermp" 
-                      className="w-6 h-6 text-white" />
+
                   </div>
                   <div>
                     <CardTitle className="text-white">ติดต่อผ่าน LINE</CardTitle>
                     <CardDescription className="text-white/80">
                       แนะนำ - ตอบเร็วที่สุด
+                      <img src={LineContact}
+                      alt="Line Contact @408hermp"/>
                     </CardDescription>
                   </div>
                 </div>

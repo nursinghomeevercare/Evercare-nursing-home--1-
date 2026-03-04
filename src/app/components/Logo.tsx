@@ -5,10 +5,9 @@ export function Logo() {
     <div className="flex items-center gap-3">
       {/* Logo Image */}
       <div style={{ width: '150px' }}>
-        <img
+        <img 
           src={logo}
           alt="Evercare Logo"
-          className="w-full h-full object-contain"
         />
       </div>
     </div>
