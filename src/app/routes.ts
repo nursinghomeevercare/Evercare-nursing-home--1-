@@ -30,6 +30,10 @@ export const router = createBrowserRouter([
       { path: "blog", Component: BlogPage },
       { path: "contact", Component: ContactPage },
       { path: "*", Component: NotFound },
-    ],
-  },
-]);
+      ],
+    },
+  ],
+  {
+    basename: "/Evercare-nursing-home--1-/",
+  }
+);
