@@ -112,7 +112,7 @@ export function Contact() {
                     <div className="text-center p-6">
                     <p>                  
                       <img src={LineContact}
-                      alt="Line Contact @408hermp"/>
+                      alt="Line Contact @ever_care"/>
                     </p>
                     </div>
                   </div>
