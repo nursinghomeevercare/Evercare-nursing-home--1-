@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),    
   ],
-  base: '/Evercare-nursing-home--1-/',
+  base: '/',
   resolve: {
     alias: {
       // Alias @ to the src directory
