@@ -60,7 +60,7 @@ export function Contact() {
                   <Phone className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">โทรศัพท์</p>
-                    <p className="text-muted-foreground">02-XXX-XXXX</p>
+                    <p className="text-muted-foreground"> 086-324-6842 , 091-010-9286 , 099-939-6696</p>
                   </div>
                 </div>
                 
@@ -68,7 +68,7 @@ export function Contact() {
                   <Mail className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">อีเมล</p>
-                    <p className="text-muted-foreground">contact@evercare.th</p>
+                    <p className="text-muted-foreground">evercarenursinghome@gmail.com</p>
                   </div>
                 </div>
 
@@ -121,7 +121,7 @@ export function Contact() {
                 <div className="bg-secondary/10 rounded-lg p-4 text-center">
                   <p className="text-sm mb-2">หรือค้นหาเราด้วย LINE ID</p>
                   <p className="text-lg font-semibold text-secondary">
-                    @408hermp
+                    @ever_care
                   </p>
                 </div>
               </CardContent>
