@@ -34,6 +34,6 @@ export const router = createBrowserRouter([
     },
   ],
   {
-    basename: "/Evercare-nursing-home--1-/",
+    basename: "/",
   }
 );
