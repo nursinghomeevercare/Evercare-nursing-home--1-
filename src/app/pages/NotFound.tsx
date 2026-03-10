@@ -1,4 +1,4 @@
-import { Button } from "../components/ui/button";
+/*import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Home, ArrowLeft } from "lucide-react";
 
@@ -32,6 +32,18 @@ export default function NotFound() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+*/
+import { useLocation } from "react-router";
+
+export default function NotFound() {
+  const location = useLocation();
+  return (
+    <div className="p-20 text-center">
+      <h1>Route Not Recognized</h1>
+      <p>React thinks you are at: <strong>{location.pathname}</strong></p>
     </div>
   );
 }
