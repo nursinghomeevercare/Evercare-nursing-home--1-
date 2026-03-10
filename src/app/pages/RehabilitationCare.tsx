@@ -2,8 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Activity, Heart, Zap, Target, TrendingUp, User } from "lucide-react";
+import { useEffect } from "react";
 
 export default function RehabilitationCare() {
+useEffect(() => {
+    document.title = "ศูนย์ฟื้นฟูผู้ป่วยหลังผ่าตัด และผู้ป่วย Stroke - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "บริการฟื้นฟูร่างกายหลังผ่าตัดและผู้ป่วยโรคหลอดเลือดสมอง (Stroke) ด้วยโปรแกรมกายภาพบำบัดเฉพาะบุคคล เพื่อให้กลับมาใช้ชีวิตปกติได้เร็วขึ้น");
+    }
+  }, []);
+
   const programs = [
     {
       icon: Activity,

@@ -5,8 +5,16 @@ import {
   Bed, Wifi, Tv, Coffee, Wind, Sun, Trees, Camera, 
   Phone, Utensils, Activity, Heart
 } from "lucide-react";
-
+import { useEffect } from "react";
 export default function FacilitiesPage() {
+    useEffect(() => {
+    document.title = "สิ่งอำนวยความสะดวกและบรรยากาศ - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "ชมบรรยากาศภายในศูนย์ดูแลผู้สูงอายุ ห้องพักสะอาด อุปกรณ์การแพทย์ครบครัน และพื้นที่กิจกรรม");
+    }
+  }, []);
+
   const facilities = [
     {
       icon: Bed,

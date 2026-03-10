@@ -1,8 +1,17 @@
-/*import { Button } from "../components/ui/button";
+import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Home, ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
 
 export default function NotFound() {
+    useEffect(() => {
+    document.title = "ไม่พบหน้านี้ - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "ขออภัย ไม่พบหน้าที่คุณต้องการ กรุณากลับไปที่หน้าหลักเพื่อดูข้อมูลบริการอื่นๆ");
+    }
+  }, []);
+
   return (
     <div className="min-h-[600px] flex items-center justify-center bg-gradient-to-br from-primary/5 via-white to-secondary/5">
       <div className="container mx-auto px-4">
@@ -35,15 +44,4 @@ export default function NotFound() {
     </div>
   );
 }
-*/
-import { useLocation } from "react-router";
 
-export default function NotFound() {
-  const location = useLocation();
-  return (
-    <div className="p-20 text-center">
-      <h1>Route Not Recognized</h1>
-      <p>React thinks you are at: <strong>{location.pathname}</strong></p>
-    </div>
-  );
-}

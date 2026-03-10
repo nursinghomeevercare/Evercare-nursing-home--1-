@@ -3,8 +3,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Brain, Heart, Users, Activity, Bell, Eye } from "lucide-react";
-
+import { useEffect } from "react";
 export default function DementiaCare() {
+    useEffect(() => {
+    document.title = "ดูแลผู้ป่วยสมองเสื่อม อัลไซเมอร์ - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "บริการดูแลผู้ป่วยสมองเสื่อมและอัลไซเมอร์ โดยทีมพยาบาลวิชาชีพ เน้นกิจกรรมฟื้นฟูความจำและสภาพจิตใจ ในสภาพแวดล้อมที่ปลอดภัย 24 ชั่วโมง");
+    }
+  }, []);
+  
   const careFeatures = [
     {
       icon: Brain,

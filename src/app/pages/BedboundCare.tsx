@@ -2,8 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Bed, Heart, Activity, Stethoscope, Shield, Droplet } from "lucide-react";
+import { useEffect } from "react";
 
 export default function BedboundCare() {
+ useEffect(() => {
+    document.title = "รับดูแลผู้ป่วยติดเตียง ศูนย์พักฟื้นผู้ป่วย - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "ศูนย์รับดูแลผู้ป่วยติดเตียง เน้นการทำกายภาพบำบัด ป้องกันแผลกดทับ และดูแลสุขอนามัยอย่างใกล้ชิด โดยทีมผู้เชี่ยวชาญย่านจรัญสนิทวงศ์");
+    }
+  }, []);
+
   const services = [
     {
       icon: Bed,

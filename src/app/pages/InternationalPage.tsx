@@ -2,8 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Globe, Languages, FileText, CreditCard, Phone, Users } from "lucide-react";
-
+import { useEffect } from "react";
 export default function InternationalPage() {
+    useEffect(() => {
+    document.title = "International Elderly Care Bangkok";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Professional nursing home services for international families in Bangkok. High standards of care with English-speaking staff.");
+    }
+  }, []);
+
+
   const services = [
     {
       icon: Languages,

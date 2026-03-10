@@ -3,8 +3,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Heart, Users, Award, Target } from "lucide-react";
+import { useEffect } from "react";
 
 export default function AboutPage() {
+  useEffect(() => {
+    // This sets the title Google shows in search results
+    document.title = "เกี่ยวกับเรา - ทีมงานและมาตรฐาน";
+    
+    // This sets the description under the link
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "ทำความรู้จักกับ Evercare Nursing Home ทีมพยาบาลและวิสัยทัศน์ในการดูแลผู้สูงอายุ");
+    }
+  } , []);
+
   const values = [
     {
       icon: Heart,

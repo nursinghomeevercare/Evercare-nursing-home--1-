@@ -3,8 +3,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Heart, Shield, Users, Clock, MapPin, Phone } from "lucide-react";
+import { useEffect } from "react"; // Add this import
 
 export default function NursingHomePage() {
+  useEffect(() => {
+    // This sets the title Google shows in search results
+    document.title = "บ้านพักคนชรากรุงเทพ - Evercare Nursing Home | ดูแลผู้สูงอายุ 24 ชม.";
+    
+    // This sets the description under the link
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "ศูนย์ดูแลผู้สูงอายุและบ้านพักคนชราในกรุงเทพฯ ย่านจรัญสนิทวงศ์ บริการดูแลพยาบาล 24 ชม. บรรยากาศอบอุ่นเหมือนบ้าน ใกล้โรงพยาบาลชั้นนำ");
+    }
+  } , []); // Empty dependency array means this runs once on mount
   const features = [
     {
       icon: Users,

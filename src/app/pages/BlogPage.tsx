@@ -2,8 +2,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { useEffect } from "react";
 
 export default function BlogPage() {
+ useEffect(() => {
+    document.title = "บทความสุขภาพและสาระน่ารู้สำหรับผู้สูงอายุ";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "แหล่งรวมความรู้เรื่องการดูแลผู้สูงอายุ สุขภาพจิต และโภชนาการที่ดี เพื่อคุณภาพชีวิตที่ยั่งยืน");
+    }
+  }, []);
   const articles = [
     {
       title: "5 สัญญาณที่บอกว่าผู้สูงอายุควรเข้าบ้านพัก",

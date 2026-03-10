@@ -3,8 +3,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Check, Phone } from "lucide-react";
+import { useEffect } from "react";
 
 export default function PricingPage() {
+useEffect(() => {
+    document.title = "ราคาและแพ็กเกจค่าบริการ - Evercare Nursing Home";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "เช็คราคาค่าบริการบ้านพักคนชราและศูนย์ดูแลผู้สูงอายุ มีทั้งแบบห้องพักรวมและห้องส่วนตัว ราคาคุ้มค่าพร้อมการดูแลระดับมาตรฐาน");
+    }
+  }, []);
+  
   const additionalServices = [
     { service: "บริการรับส่งโรงพยาบาล", price: "500-1,500 บาท/ครั้ง (ขึ้นอยู่กับระยะทาง)" },
     { service: "ค่าตรวจเลือด ตรวจปัสสาวะ", price: "ตามราคาจริง + ค่าบริการ 500 บาท" },
