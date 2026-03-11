@@ -3,6 +3,7 @@ import { Card, CardContent } from "./ui/card";
 import { Users, Award, Clock, Heart } from "lucide-react";
 import heroImage from "../assets/happy.jpg"; 
 import Hospital from "../assets/nurse-senior.jpg" ;
+import { SEO } from "../components/SEO";
 
 export function About() {
   const stats = [
@@ -29,8 +30,13 @@ export function About() {
   ];
 
   return (
+    
     <section className="py-20">
       <div className="container mx-auto px-4">
+         <SEO 
+  title="บ้านพักดูแลผู้สูงอายุ Evercare - ความรักและการดูแลที่คุณวางใจได้" 
+  description="Evercare Nursing Home บ้านพักดูแลผู้สูงอายุ รับดูแลผู้ป่วย ถนนจรัญสนิทวงศ์ กรุงเทพฯ" 
+/>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative">
