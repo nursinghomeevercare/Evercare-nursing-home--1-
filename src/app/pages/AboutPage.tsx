@@ -4,6 +4,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Heart, Users, Award, Target } from "lucide-react";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -48,7 +49,13 @@ export default function AboutPage() {
   ];
 
   return (
-    <div>
+<div>
+      {/* 4. ADD THE SEO COMPONENT HERE */}
+      <SEO 
+        title="เกี่ยวกับเรา ทีมงานและมาตรฐานการดูแล" 
+        description="ทำความรู้จักกับ Evercare Nursing Home ทีมพยาบาลวิชาชีพ ผู้ช่วยพยาบาล และนักกายภาพบำบัด พร้อมวิสัยทัศน์ในการดูแลผู้สูงอายุด้วยความรักและมาตรฐานสากล" 
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

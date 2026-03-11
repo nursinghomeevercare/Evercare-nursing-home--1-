@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Bed, Heart, Activity, Stethoscope, Shield, Droplet } from "lucide-react";
 import { useEffect } from "react";
-
+import { SEO } from "../components/SEO";
 export default function BedboundCare() {
  useEffect(() => {
     document.title = "รับดูแลผู้ป่วยติดเตียง ศูนย์พักฟื้นผู้ป่วย - Evercare Nursing Home";
@@ -66,6 +66,10 @@ export default function BedboundCare() {
 
   return (
     <div>
+      <SEO 
+  title="ดูแลผู้ป่วยติดเตียง" 
+  description="ศูนย์รับดูแลผู้ป่วยติดเตียงย่านจรัญสนิทวงศ์ เน้นการทำความสะอาด ป้องกันแผลกดทับ และทำกายภาพบำบัดโดยผู้เชี่ยวชาญ" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

@@ -4,6 +4,8 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Heart, Shield, Users, Clock, MapPin, Phone } from "lucide-react";
 import { useEffect } from "react"; // Add this import
+import { SEO } from "../components/SEO";
+
 
 export default function NursingHomePage() {
   useEffect(() => {
@@ -55,6 +57,11 @@ export default function NursingHomePage() {
 
   return (
     <div>
+      <SEO 
+  title="เกี่ยวกับเรา - ทีมงานและมาตรฐาน" 
+  description="
+  Evercare ดูแลผู้สูงอายุด้วยทีมงานมืออาชีพที่มีประสบการณ์" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

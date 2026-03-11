@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
-
+import { SEO } from "../components/SEO";
 export default function BlogPage() {
  useEffect(() => {
     document.title = "บทความสุขภาพและสาระน่ารู้สำหรับผู้สูงอายุ";
@@ -68,6 +68,10 @@ export default function BlogPage() {
 
   return (
     <div>
+      <SEO 
+  title="บทความสุขภาพผู้สูงอายุ" 
+  description="แหล่งรวมความรู้เรื่องการดูแลผู้สูงอายุ วิธีการรับมือกับโรคต่างๆ และเคล็ดลับการดูแลสุขภาพกายและใจให้แข็งแรง" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

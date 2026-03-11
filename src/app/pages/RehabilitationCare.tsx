@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Activity, Heart, Zap, Target, TrendingUp, User } from "lucide-react";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
 
 export default function RehabilitationCare() {
 useEffect(() => {
@@ -85,6 +86,10 @@ useEffect(() => {
 
   return (
     <div>
+      <SEO 
+  title="ฟื้นฟูผู้ป่วยหลังผ่าตัด/Stroke" 
+  description="ศูนย์ฟื้นฟูผู้ป่วยโรคหลอดเลือดสมอง (Stroke) และผู้ป่วยหลังผ่าตัด ด้วยโปรแกรมกายภาพบำบัดเข้มข้นเพื่อให้กลับมาช่วยเหลือตัวเองได้อีกครั้ง" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

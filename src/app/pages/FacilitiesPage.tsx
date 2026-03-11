@@ -6,6 +6,9 @@ import {
   Phone, Utensils, Activity, Heart
 } from "lucide-react";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
+
+
 export default function FacilitiesPage() {
     useEffect(() => {
     document.title = "สิ่งอำนวยความสะดวกและบรรยากาศ - Evercare Nursing Home";
@@ -95,6 +98,10 @@ export default function FacilitiesPage() {
 
   return (
     <div>
+      <SEO 
+  title="สิ่งอำนวยความสะดวก" 
+  description="ชมบรรยากาศบ้านพักผู้สูงอายุ Evercare ห้องพักสะอาด ทันสมัย พร้อมอุปกรณ์ช่วยเหลือทางการแพทย์ครบครันเพื่อความปลอดภัยสูงสุด" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

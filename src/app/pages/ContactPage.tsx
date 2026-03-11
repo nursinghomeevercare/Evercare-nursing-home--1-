@@ -1,5 +1,7 @@
 import { Contact as ContactSection } from "../components/Contact";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
+
 export default function ContactPage() {
     useEffect(() => {
     document.title = "ติดต่อสอบถาม แผนที่ และที่ตั้ง - Evercare Nursing Home";
@@ -11,6 +13,10 @@ export default function ContactPage() {
 
   return (
     <div>
+      <SEO 
+  title="ติดต่อเรา แผนที่ และเบอร์โทรศัพท์" 
+  description="ติดต่อสอบถามข้อมูล นัดหมายเข้าชมสถานที่ หรือสอบถามเส้นทางมายัง Evercare Nursing Home ถนนจรัญสนิทวงศ์ กรุงเทพฯ" 
+/>
       <ContactSection />
     </div>
   );

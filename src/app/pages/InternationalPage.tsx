@@ -3,6 +3,9 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Globe, Languages, FileText, CreditCard, Phone, Users } from "lucide-react";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
+
+
 export default function InternationalPage() {
     useEffect(() => {
     document.title = "International Elderly Care Bangkok";
@@ -65,6 +68,11 @@ export default function InternationalPage() {
 
   return (
     <div>
+       <SEO 
+  title="เกี่ยวกับเรา - ทีมงานและมาตรฐาน" 
+  description="
+  Evercare Nursing Home. Senior care giver in Bangkok , Thailand" 
+/>
       {/* Hero Section - Bilingual */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">

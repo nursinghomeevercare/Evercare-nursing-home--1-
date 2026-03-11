@@ -4,6 +4,8 @@ import { Button } from "../components/ui/button";
 import { Link } from "react-router";
 import { Check, Phone } from "lucide-react";
 import { useEffect } from "react";
+import { SEO } from "../components/SEO";
+
 
 export default function PricingPage() {
 useEffect(() => {
@@ -25,6 +27,10 @@ useEffect(() => {
 
   return (
     <div>
+      <SEO 
+  title="ราคาค่าบริการ" 
+  description="ตรวจสอบอัตราค่าบริการรายเดือนสำหรับบ้านพักคนชรา มีทั้งแบบห้องรวมและห้องส่วนตัว ราคาโปร่งใส ไม่มีค่าใช้จ่ายแฝง" 
+/>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">
