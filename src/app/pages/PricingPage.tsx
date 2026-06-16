@@ -20,7 +20,7 @@ useEffect(() => {
     { service: "บริการรับส่งโรงพยาบาล", price: "500-1,500 บาท/ครั้ง (ขึ้นอยู่กับระยะทาง)" },
     { service: "ค่าตรวจเลือด ตรวจปัสสาวะ", price: "ตามราคาจริง + ค่าบริการ 500 บาท" },
     { service: "ค่ายา เวชภัณฑ์พิเศษ", price: "ตามราคาจริง" },
-    { service: "นักกายภาพบำบัดส่วนตัว", price: "800-1,200 บาท/ชั่วโมง" },
+    { service: "นักกายภาพบำบัดส่วนตัว", price: "1000-1,500 บาท/ชั่วโมง" },
     { service: "ที่นอนลมป้องกันแผลกดทับ", price: "3,000 บาท/เดือน" },
     { service: "เครื่องดูดเสมหะ", price: "2,000 บาท/เดือน" }
   ];
@@ -47,7 +47,9 @@ useEffect(() => {
 
       {/* Main Pricing from Services Component */}
       <Services />
-
+      <p className="text-lg text-muted-foreground">
+                หมายเหตุจากภาพ: ราคานี้ยังไม่รวมของใช้ส่วนตัวและเวชภัณฑ์ทางการแพทย์เฉพาะทาง เช่น สบู่ ยาสีฟัน แชมพู สายให้อาหาร สายสวนปัสสาวะ ฯลฯ.
+      </p>
       {/* Additional Services */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -101,7 +103,11 @@ useEffect(() => {
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>รับชำระเงินสด โอนเงิน บัตรเครดิต</span>
+                        <span>มัดจำล่วงหน้า 2 เดือน</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>รับชำระเงินสด โอนเงิน</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -119,10 +125,6 @@ useEffect(() => {
                       <li className="flex items-start gap-2">
                         <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                         <span>คืนเงินตามสัดส่วนวันที่ใช้บริการ</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                        <span>ไม่คืนเงินมัดจำ (ถ้ามี)</span>
                       </li>
                     </ul>
                   </div>

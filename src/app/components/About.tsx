@@ -8,16 +8,6 @@ import { SEO } from "../components/SEO";
 export function About() {
   const stats = [
     {
-      icon: Users,
-      number: "50+",
-      label: "ผู้สูงอายุที่ดูแล"
-    },
-    {
-      icon: Award,
-      number: "15+",
-      label: "ปีของประสบการณ์"
-    },
-    {
       icon: Clock,
       number: "24/7",
       label: "ดูแลตลอด 24 ชั่วโมง"
