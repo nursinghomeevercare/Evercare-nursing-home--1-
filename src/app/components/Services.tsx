@@ -39,7 +39,8 @@ export function Services() {
   {
     name: "กลุ่มช่วยเหลือตัวเองได้ (Normal / Low Care)",
     price: "27,000",
-    target: "กลุ่มช่วยเหลือตัวเองได้",
+    priceperhour : "(฿1,200/24 ชั่วโมง)",
+    target: "กลุ่มผู้สูงอายุทั่วไป ช่วยเหลือตัวเองได้",
     meal: [
       "ทานอาหารได้เองปกติ",
       "กลืนได้ดี ไม่สำลัก",
@@ -55,6 +56,7 @@ export function Services() {
   {
     name: "กลุ่มติดเตียง (ระดับต้น) (Bedridden – Oral Feeding)",
     price: "30,000",
+    priceperhour : "(฿1,500/24 ชั่วโมง)",
     target: "กลุ่มติดเตียง ระดับต้น",
     meal: [
       "ทานอาหารทางปากได้",
@@ -62,15 +64,15 @@ export function Services() {
       "ทานยาทางปากได้"
     ],
     care: [
-      "ติดเตียง ช่วยเหลือตัวเองไม่ได้",
-      "ต้องมีคนช่วยพลิกตะแคงตัว",
-      "ต้องเช็ดตัว/อาบน้ำบนเตียง",
-      "ขับถ่ายบนเตียง ใส่แพมเพิส"
+      "ผู้ป่วยแขนขาอ่อนแรง แต่สามารถนั่งหรือยืนได้โดยมีคนช่วย",
+      "เดินได้ระยะสั้น ต้องใช้ walker หรือ รถเข็น",
+      "ผู้ป่วยหลังผ่าตัดกระดูกสะโพก หรือเข่า"
     ]
   },
   {
     name: "กลุ่มอัลไซเมอร์ & ติดเตียง (ระดับสูง) (High Care / Tube Feeding)",
     price: "35,000",
+    priceperhour : "(฿2,000/24 ชั่วโมง)",
     target: "กลุ่มอัลไซเมอร์ & ติดเตียง ระดับสูง",
     meal: [
       "ทานอาหารเองไม่ได้",
@@ -78,9 +80,10 @@ export function Services() {
       "ให้ยาทางสายยาง"
     ],
     care: [
-      "ติดเตียง 100% มีแผลกดทับที่ต้องดูแล",
-      "ผู้ป่วยเจาะคอ / ต้องดูดเสมหะ",
-      "ผู้ป่วยอัลไซเมอร์ เดินหลง ควบคุมอารมณ์ไม่ได้",
+      "ติดเตียง ช่วยเหลือตัวเองไม่ได้",
+      "ต้องมีคนช่วยพลิกตะแคงตัว/มีแผลกดทับ",
+      "ผู้ป่วยเจาะคอ/ต้องดูดเสมหะ",
+      "ผู้อัลไซเมอร์ (หลง/ควบคุมอารมณ์ไม่ได้)",
       "ผู้ป่วยระยะประคับประคอง (Palliative)"
     ]
   }
@@ -139,17 +142,21 @@ export function Services() {
         )}
 
         <CardHeader className="text-center">
-          <CardTitle className="text-xl leading-relaxed">
+          <CardTitle className="text-l leading-relaxed">
             {pkg.name}
           </CardTitle>
 
-          <div className="text-4xl font-bold text-primary mt-4">
+          <div className="text-2xl font-bold text-primary mt-4">
             ฿{pkg.price}
           </div>
-
           <p className="text-sm text-muted-foreground">
-            ต่อเดือน
+            ต่อเดือน หรือ
           </p>
+          <div className="text-xl font-bold text-primary">
+            {pkg.priceperhour}
+          </div>
+
+
         </CardHeader>
 
         <CardContent className="space-y-6">
