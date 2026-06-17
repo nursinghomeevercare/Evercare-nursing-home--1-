@@ -61,7 +61,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>ถนนจรัญสนิทวงศ์</li>
               <li>กรุงเทพมหานคร</li>
-              <li className="mt-3">โทร: 02-XXX-XXXX</li>
+              <li className="mt-3">โทร: 086-324-6842 , 091-010-9286 , 099-939-6696</li>
               <li>อีเมล: contact@evercare.th</li>
             </ul>
           </div>
