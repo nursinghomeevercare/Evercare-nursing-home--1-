@@ -45,9 +45,25 @@
 
   <url>
     <loc>https://evercarenursinghome.com/international</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://evercarenursinghome.com/international/blog</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url><loc>https://evercarenursinghome.com/international/blog/why-choose-evercare-bangkok</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/why-bangkok-for-medical-treatment</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/medical-treatment-visa-thailand-support</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/nursing-home-vs-hospital-after-surgery</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/why-have-surgery-in-thailand</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/hidden-costs-after-surgery-thailand</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://evercarenursinghome.com/international/blog/nursing-home-prices-thailand-international</loc><lastmod>2026-08-13</lastmod><priority>0.8</priority></url>
 
   <url>
     <loc>https://evercarenursinghome.com/about</loc>

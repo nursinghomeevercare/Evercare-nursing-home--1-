@@ -4,6 +4,8 @@ import { MessageCircle, Phone, Mail, Clock, QrCode } from "lucide-react";
 import LineContact from "../assets/Line.jpg" ;
 import Hospital from "../assets/nurse-senior.jpg" ;
 
+const LINE_URL = "https://line.me/R/ti/p/@ever_care";
+
 export function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -36,7 +38,7 @@ export function Contact() {
               </CardHeader>
               <CardContent>
                 <p className="mb-4">
-                  สแกน QR Code ด้านล่างเพื่อเพิ่มเราเป็นเพื่อนบน LINE
+                  กดรูป QR Code หรือสแกนเพื่อเพิ่มเราเป็นเพื่อนบน LINE
                 </p>
                 <p className="text-sm text-white/80">
                   • ปรึกษาได้ตลอด 24 ชั่วโมง<br />
@@ -109,20 +111,23 @@ export function Contact() {
                   <div className="w-64 h-64 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
 
                     {/* QR Code Placeholder */}
-                    <div className="text-center p-6">
-                    <p>                  
-                      <img src={LineContact}
-                      alt="Line Contact @ever_care"/>
-                    </p>
-                    </div>
+                    <a
+                      href={LINE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-6 text-center transition hover:scale-[1.03]"
+                      aria-label="เปิด LINE Official Account ของ Evercare"
+                    >
+                      <img src={LineContact} alt="LINE Official Account @ever_care กดเพื่อเปิด LINE" />
+                    </a>
                   </div>
                 </div>
                 
                 <div className="bg-secondary/10 rounded-lg p-4 text-center">
-                  <p className="text-sm mb-2">หรือค้นหาเราด้วย LINE ID</p>
-                  <p className="text-lg font-semibold text-secondary">
+                  <p className="text-sm mb-2">กดเพื่อเปิด LINE หรือค้นหาด้วย LINE ID</p>
+                  <a href={LINE_URL} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-secondary hover:underline">
                     @ever_care
-                  </p>
+                  </a>
                 </div>
               </CardContent>
             </Card>

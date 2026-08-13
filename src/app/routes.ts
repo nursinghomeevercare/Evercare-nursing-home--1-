@@ -8,6 +8,8 @@ import RehabilitationCare from "./pages/RehabilitationCare";
 import PricingPage from "./pages/PricingPage";
 import FacilitiesPage from "./pages/FacilitiesPage";
 import InternationalPage from "./pages/InternationalPage";
+import InternationalBlogPage from "./pages/InternationalBlogPage";
+import InternationalArticlePage from "./pages/InternationalArticlePage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
@@ -27,6 +29,8 @@ export const router = createBrowserRouter(
         { path: "pricing", Component: PricingPage },
         { path: "facilities", Component: FacilitiesPage },
         { path: "international", Component: InternationalPage },
+        { path: "international/blog", Component: InternationalBlogPage },
+        { path: "international/blog/:slug", Component: InternationalArticlePage },
         { path: "about", Component: AboutPage },
         { path: "blog", Component: BlogPage },
         { path: "contact", Component: ContactPage },

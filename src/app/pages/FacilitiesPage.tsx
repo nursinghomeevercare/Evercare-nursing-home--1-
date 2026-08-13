@@ -7,6 +7,14 @@ import {
 } from "lucide-react";
 import { useEffect } from "react";
 import { SEO } from "../components/SEO";
+import gardenWalkway from "../assets/facilities/evercare-nursing-home-garden-walkway-bangkok.webp";
+import buildingExterior from "../assets/facilities/evercare-nursing-home-building-bangkok.webp";
+import nursingHomeEntrance from "../assets/facilities/evercare-nursing-home-entrance-bangkok.webp";
+import patientRoomGarden from "../assets/facilities/evercare-nursing-home-patient-room-garden-view.webp";
+import adjustableBeds from "../assets/facilities/evercare-nursing-home-adjustable-beds-bangkok.webp";
+import sharedCareRoom from "../assets/facilities/evercare-nursing-home-shared-care-room-bangkok.webp";
+import activityCorner from "../assets/facilities/evercare-nursing-home-activity-corner-bangkok.webp";
+import activityMaterials from "../assets/facilities/evercare-nursing-home-activity-materials-bangkok.webp";
 
 
 export default function FacilitiesPage() {
@@ -96,6 +104,65 @@ export default function FacilitiesPage() {
     "อุปกรณ์กายภาพบำบัด"
   ];
 
+  const facilityPhotos = [
+    {
+      src: nursingHomeEntrance,
+      alt: "ทางเข้า Evercare nursing home Bangkok และอาคารศูนย์ดูแลผู้สูงอายุ",
+      title: "ทางเข้าและอาคาร Evercare",
+      description: "ภาพสถานที่จริงบริเวณทางเข้า nursing home ของเราในกรุงเทพฯ",
+      layout: "md:col-span-2 lg:col-span-2",
+    },
+    {
+      src: buildingExterior,
+      alt: "อาคาร Evercare nursing home ในกรุงเทพพร้อมพื้นที่สนามด้านหน้า",
+      title: "อาคารและสนามด้านหน้า",
+      description: "บรรยากาศภายนอกของศูนย์ดูแลผู้สูงอายุ Evercare",
+      layout: "",
+    },
+    {
+      src: gardenWalkway,
+      alt: "สวนและทางเดินภายใน Evercare nursing home Bangkok สำหรับผู้สูงอายุ",
+      title: "สวนและทางเดิน",
+      description: "พื้นที่กลางแจ้งและทางเดินภายใน nursing home",
+      layout: "",
+    },
+    {
+      src: patientRoomGarden,
+      alt: "ห้องพักผู้สูงอายุใน nursing home พร้อมเตียงปรับระดับและวิวสวน",
+      title: "ห้องพักรับแสงธรรมชาติ",
+      description: "เตียงปรับระดับและประตูหน้าต่างที่มองออกไปยังสวน",
+      layout: "md:col-span-2",
+    },
+    {
+      src: adjustableBeds,
+      alt: "เตียงปรับระดับในห้องพัก Evercare nursing home Bangkok",
+      title: "เตียงปรับระดับ",
+      description: "พื้นที่ห้องพักจริงพร้อมตู้ข้างเตียงและแสงธรรมชาติ",
+      layout: "md:col-span-2",
+    },
+    {
+      src: sharedCareRoom,
+      alt: "ห้องพักรวม Evercare nursing home สำหรับการดูแลผู้สูงอายุในกรุงเทพ",
+      title: "ห้องพักรวม",
+      description: "ห้องพักรวมที่จัดวางเตียงและทางเดินภายในอย่างเป็นระเบียบ",
+      layout: "md:col-span-2 lg:col-span-2",
+    },
+    {
+      src: activityCorner,
+      alt: "มุมกิจกรรมสำหรับผู้สูงอายุใน Evercare nursing home Bangkok",
+      title: "มุมกิจกรรม",
+      description: "โต๊ะกิจกรรมและชั้นอุปกรณ์สำหรับกิจกรรมที่เหมาะสม",
+      layout: "",
+    },
+    {
+      src: activityMaterials,
+      alt: "อุปกรณ์กิจกรรมและหนังสือในศูนย์ดูแลผู้สูงอายุ Evercare nursing home",
+      title: "อุปกรณ์กิจกรรม",
+      description: "หนังสือ เกม และอุปกรณ์สำหรับกิจกรรมภายในศูนย์",
+      layout: "",
+    },
+  ];
+
   return (
     <div>
       <SEO 
@@ -119,6 +186,40 @@ export default function FacilitiesPage() {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Authentic Facility Photo Gallery */}
+      <section className="bg-[#f3f8f7] py-20">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 font-semibold uppercase tracking-[0.16em] text-secondary">ภาพสถานที่จริง</p>
+            <h2 className="mb-4 text-3xl text-primary md:text-4xl">บรรยากาศ Evercare Nursing Home</h2>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              ชมอาคาร ห้องพัก สวน และมุมกิจกรรมจริงของศูนย์ดูแลผู้สูงอายุ Evercare ในกรุงเทพฯ
+            </p>
+          </div>
+
+          <div className="grid auto-rows-[19rem] grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {facilityPhotos.map((photo, index) => (
+              <figure key={photo.alt} className={`group relative overflow-hidden rounded-2xl bg-gray-200 shadow-sm ${photo.layout}`}>
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={index === 0 ? 1418 : undefined}
+                  height={index === 0 ? 1019 : undefined}
+                  loading={index < 2 ? "eager" : "lazy"}
+                  decoding="async"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/55 to-transparent px-5 pb-5 pt-16 text-white">
+                  <h3 className="text-lg font-semibold">{photo.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-white/80">{photo.description}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-6 text-center text-sm text-muted-foreground">ภาพถ่ายสถานที่จริง ปรับเฉพาะการครอป แสง และสีเพื่อการแสดงผลบนเว็บไซต์</p>
         </div>
       </section>
 
